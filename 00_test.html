@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google page</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      #header {
+        /* display: flex; */
+        /* justify-content: flex-end; */
+        /* text-align: right; */
+        height: 50px;
+      }
+      .toplink {
+        margin-top: 10px;
+        padding: 10px;
+        display: block;
+        float: right;
+        color: black;
+      }
+
+      .topimage {
+        height: 10px;
+        width: 10px;
+        background: red;
+        border-radius: 50%;
+        margin-top: 15px;
+
+        margin-right: 10px;
+      }
+
+      #middle {
+        margin-top: 100px;
+        text-align: center;
+      }
+
+      #searcharea {
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      #search {
+        width: 500px;
+        height: 30px;
+        border-radius: 15px;
+      }
+
+      #googlesearch {
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      .button1 {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+      }
+      .button1:hover {
+        box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
+      }
+
+      #p.redline {
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+      }
+
+      #links {
+        text-align: center;
+        color: red;
+        margin: 20px;
+      }
+
+      #a {
+        color: blue;
+      }
+
+      #link {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 48px;
+      }
+      #footer {
+        background-color: rgb(226, 219, 219);
+        padding: 20px;
+        border: bottom 2px solid gray;
+        color: rgb(87, 84, 84);
+        overflow: auto;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+      }
+      .float-left{
+        float: left !important;
+      }
+
+      .float-right{
+        float: right !important;
+      }
+      #footer a {
+        margin-right: 20px;
+        margin-bottom: 100%;
+      }
+
+      #aside {
+        display: flex;
+        justify-content: end;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <a href="#" class="toplink topimage"></a>
+      <a href="#" class="toplink">image</a>
+      <a href="#" class="toplink">gmail</a>
+    </div>
+
+    <div id="middle">
+      <img
+        src="https://www.google.com/logos/doodles/2021/seasonal-holidays-2021-6753651837109324-6752733080595603-cst.gif"
+      />
+
+      <div id="searcharea">
+        <input id="search" type="text" />
+      </div>
+    </div>
+
+    <div id="googlesearch">
+      <button class="button1" type="button">google search</button>
+      <button class="button1" type="button">I'm Feeling Lucky</button>
+    </div>
+
+    <div id="links">
+      Watch now:<a
+        href="https://www.google.com/url?q=https://youtu.be/EqboAI-Vk-U/%3Futm_source%3Dgoogle%26utm_medium%3Dhpp%26utm_campaign%3DCanada&source=hpp&id=19027016&ct=3&usg=AFQjCNEjEAdB00AHvDLmvPJwZRQsYQe3FQ&sa=X&ved=0ahUKEwj3r7zS39T0AhWqwYsBHXbBDZkQ8IcBCBE"
+        >See The search Trends of 2021</a
+      >
+    </div>
+
+    <div id="link">Google Offers In:<a href="#">English</a> <a href="#">فارسی</a></div>
+
+    <div id="footer">
+      <div class="float-left">
+        <a href="#">advertising</a>
+        <a href="#">bussiness</a>
+        <a href="#">How Search work</a>
+      </div>
+      <div class="float-right">
+        <a href="#">privecy</a>
+        <a href="#">terms</a>
+        <a href="#">Setting</a>
+      </div>
+    </div>
+  </body>
+</html>
