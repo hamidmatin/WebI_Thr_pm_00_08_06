@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .search1 {
+        padding: 10px;
+        position: relative;
+        border: 1px solid black;
+        width: 300px;
+      }
+      .search1 input {
+        display: block;
+        width: 100%;
+        padding-left: 30px;
+      }
+      .search1 img {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      }
+
+      .search2 {
+        padding: 10px;
+        border: 1px solid black;
+        width: 300px;
+      }
+      .search2 input {
+        border: none;
+        outline: none;
+        width: 90%;
+      }
+      .search2 image {
+        width: 10%;
+      }
+
+      .hangout {
+        width: 200px;
+        border: 1px solid black;
+      }
+      /*************/
+      .row::after {
+        content: '';
+        clear: both;
+        display: block;
+      }
+      .hangout .avatar{
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        float: left;
+      }
+      .hangout .name{
+        width: calc(100% - 50px);
+        /* background-color: bisque; */
+        float: left;
+        line-height: 50px;
+        padding-left: 10px;
+      }
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+
+      .chat {
+        height: 150px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search1">
+      <input type="text" />
+      <img src="images/iconfinder_38_62695.png" alt="" />
+    </div>
+    <div class="search2">
+      <img src="images/iconfinder_38_62695.png" alt="" />
+      <input type="text" />
+    </div>
+
+    <div class="hangout">
+      <div class="row mb-10">
+        <div class="avatar"></div>
+        <div class="name">sdsds</div>
+      </div>
+      <div class="chat">
+        <div class="row mb-10">
+          <div class="avatar"></div>
+          <div class="name">sdsds</div>
+        </div>
+        <div class="row mb-10">
+          <div class="avatar"></div>
+          <div class="name">afadfa</div>
+        </div>
+        <div class="row mb-10">
+          <div class="avatar"></div>
+          <div class="name">fadfadf</div>
+        </div>
+        <div class="row mb-10">
+          <div class="avatar"></div>
+          <div class="name">adfadfadf</div>
+        </div>
+        <div class="row mb-10">
+          <div class="avatar"></div>
+          <div class="name">dfdasfdafsdagsdg</div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+  </body>
+</html>
