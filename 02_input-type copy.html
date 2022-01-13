@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.3-web/css/all.min.css" />
+    <title>Document</title>
+    <style>
+      .row {
+        margin-bottom: 10px;
+      }
+      .label-control {
+        color: blue;
+        display: inline-block;
+        width: 80px;
+      }
+      label {
+        cursor: pointer;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+
+      #textarea {
+        /* font-size: 40px; */
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="text">test</label>
+    <form action="">
+      <div class="row">
+        <span class="label-control">text</span>
+        <input name="text" value="my text" readonly/>
+      </div>
+      <div class="row">
+        <!-- <Label for="id-value"></Label> -->
+        <label for="text" class="label-control">text</label>
+        <input id="text" type="text" name="text" maxlength="15" minlength="10"/>
+      </div>
+      <div class="row">
+        <label for="password" class="label-control">password</label>
+        <input id="password" type="password" name="password" placeholder="Enter Password"/>
+      </div>
+      <div class="row">
+        <label for="email" class="label-control">email</label>
+        <input id="email" type="email" name="email" required value="dfd#@sds.c" disabled/>
+      </div>
+      <div class="row">
+        <label for="tel" class="label-control">tel</label>
+        <input id="tel" type="tel" name="tel" />
+      </div>      
+      <div class="row">
+        <label for="number" class="label-control">number</label>
+        <input id="number" type="number" name="number" min="-10" max="10"/>
+      </div>
+      <div class="row">
+        <label for="range" class="label-control">range</label>
+        <input id="range" type="range" name="range" min="20" max="70" value="30" />
+      </div>
+      <div class="row">
+        <label for="file" class="label-control">file</label>
+        <input id="file" type="file" name="file" disabled/>
+      </div>
+      <div class="row">
+        <label for="time" class="label-control">time</label>
+        <input id="time" type="time" name="time" />
+      </div>
+      <div class="row">
+        <label for="date" class="label-control">date</label>
+        <input id="date" type="date" name="date" />
+      </div>
+      <div class="row">
+        <label for="datetime-local" class="label-control">datetime-local</label>
+        <input id="datetime-local" type="datetime-local" name="datetime-local" />
+      </div>
+      <div class="row">
+        <label for="color" class="label-control">color</label>
+        <input id="color" type="color" name="color" />
+      </div>
+      <div class="row">
+        <span class="label-control">color</span>
+        <label for="checkbox1">checkbox1</label>
+        <input id="checkbox1" type="checkbox" name="checkbox1" checked disabled/>
+        <label for="checkbox2">checkbox2</label>
+        <input id="checkbox2" type="checkbox" name="checkbox2" disabled />
+        <label for="checkbox3">checkbox3</label>
+        <input id="checkbox3" type="checkbox" name="checkbox3" />
+      </div>
+      
+      <div class="row">
+        <span class="label-control">radio</span>
+        <label> option 1 <input type="radio" name="option" value="option1" checked></label>
+        <label> option 2 <input type="radio" name="option" value="option2"></label>
+        <label> option 3 <input type="radio" name="option" value="option3"></label>
+      </div>
+      <div class="row">
+        <span class="label-control">Gender</span>
+        <label> Male <input type="radio" name="gender" value="0" checked></label>
+        <label> Female <input type="radio" name="gender" value="1"></label>
+      </div>
+      <div class="row">
+        <label for="select" class="label-control">select</label>
+        <select name="select" id="select">
+          <option value="0">select 1</option>
+          <option value="1">select 2</option>
+          <option value="2">select 3</option>
+          <option value="3">select 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="multiple-select" class="label-control">multiple-select</label>
+        <select name="multiple-select" id="multiple-select" multiple>
+          <option value="0">select 1</option>
+          <option value="1">select 2</option>
+          <option value="2">select 3</option>
+          <option value="3">select 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="textarea" class="label-control">textarea</label>
+        <textarea id="textarea" cols="50" rows="5">Text Area</textarea>
+      </div>
+      <hr>
+      <input type="submit" value="Send">
+      <input type="reset">
+      <input type="button" value="Button"> <br>
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+      <button type="button">Button</button>
+    </form>
+  </body>
+</html>
